@@ -12,6 +12,16 @@ public class Expense {
     private LocalDate date;
     private String reason;
 
+    //Builders
+
+    public Expense(){}
+
+    public Expense(Double amount, LocalDate date, String reason){
+        this.amount = amount;
+        this.date = date;
+        this.reason = reason;
+    }
+
     //Getters & Setters
 
     public Long getId() {

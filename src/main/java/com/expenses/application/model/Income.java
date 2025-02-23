@@ -12,6 +12,16 @@ public class Income {
     private LocalDate date;
     private String source;
 
+    //Builders
+
+    public Income(){}
+
+    public Income(Double amount, LocalDate date, String source){
+        this.amount = amount;
+        this.date = date;
+        this.source = source;
+    }
+
     //Getters & Setters
 
     public Long getId() {
